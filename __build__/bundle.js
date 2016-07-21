@@ -61,6 +61,10 @@
 	
 	__webpack_require__(/*! current-input */ 177);
 	
+	var _styles = __webpack_require__(/*! ./styles/styles */ 178);
+	
+	var _styles2 = _interopRequireDefault(_styles);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function App() {
@@ -69,26 +73,32 @@
 	  }
 	
 	  function testResult(item, prefix) {
+	    var value = toString(prefix ? _detectIt2.default.state[prefix][item] : _detectIt2.default[item]);
+	    var color = _styles2.default.testResultColor(value);
 	    return _react2.default.createElement(
 	      'div',
-	      null,
+	      { style: _styles2.default.testResult },
 	      item,
 	      ': ',
-	      toString(prefix ? _detectIt2.default.state[prefix][item] : _detectIt2.default[item])
+	      _react2.default.createElement(
+	        'span',
+	        { style: { color: color } },
+	        value
+	      )
 	    );
 	  }
 	
 	  return _react2.default.createElement(
 	    'div',
-	    null,
+	    { style: _styles2.default.app },
 	    _react2.default.createElement(
 	      'h1',
-	      { id: 'detect-it' },
+	      { id: 'detect-it', style: _styles2.default.h1 },
 	      'Detect It — Live Detection Test'
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      null,
+	      { style: _styles2.default.repoLink },
 	      _react2.default.createElement(
 	        'a',
 	        { href: 'https://github.com/rafrex/detect-it', target: '_blank' },
@@ -97,28 +107,27 @@
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      null,
-	      testResult('deviceType'),
-	      testResult('hasTouchEventsApi'),
-	      testResult('hasPointerEventsApi'),
-	      testResult('hasTouch'),
-	      testResult('maxTouchPoints'),
-	      testResult('primaryHover'),
-	      testResult('primaryPointer')
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      null,
-	      'Detect It\'s state is a deterministic function of the state of the four micro state machines that it contains:'
+	      { style: _styles2.default.code },
+	      _react2.default.createElement(
+	        'div',
+	        { style: _styles2.default.detects },
+	        testResult('deviceType'),
+	        testResult('hasTouchEventsApi'),
+	        testResult('hasPointerEventsApi'),
+	        testResult('hasTouch'),
+	        testResult('maxTouchPoints'),
+	        testResult('primaryHover'),
+	        testResult('primaryPointer')
+	      )
 	    ),
 	    _react2.default.createElement(
 	      'h2',
-	      { id: 'detect-hover' },
+	      { id: 'detect-hover', style: _styles2.default.h2 },
 	      'Detect Hover'
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      null,
+	      { style: _styles2.default.repoLink },
 	      _react2.default.createElement(
 	        'a',
 	        { href: 'https://github.com/rafrex/detect-hover', target: '_blank' },
@@ -127,20 +136,24 @@
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      null,
-	      testResult('hover', 'detectHover'),
-	      testResult('none', 'detectHover'),
-	      testResult('anyHover', 'detectHover'),
-	      testResult('anyNone', 'detectHover')
+	      { style: _styles2.default.code },
+	      _react2.default.createElement(
+	        'div',
+	        { style: _styles2.default.detects },
+	        testResult('hover', 'detectHover'),
+	        testResult('none', 'detectHover'),
+	        testResult('anyHover', 'detectHover'),
+	        testResult('anyNone', 'detectHover')
+	      )
 	    ),
 	    _react2.default.createElement(
 	      'h2',
-	      { id: 'detect-pointer' },
+	      { id: 'detect-pointer', style: _styles2.default.h2 },
 	      'Detect Pointer'
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      null,
+	      { style: _styles2.default.repoLink },
 	      _react2.default.createElement(
 	        'a',
 	        { href: 'https://github.com/rafrex/detect-pointer', target: '_blank' },
@@ -149,22 +162,26 @@
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      null,
-	      testResult('fine', 'detectPointer'),
-	      testResult('coarse', 'detectPointer'),
-	      testResult('none', 'detectPointer'),
-	      testResult('anyFine', 'detectPointer'),
-	      testResult('anyCoarse', 'detectPointer'),
-	      testResult('anyNone', 'detectPointer')
+	      { style: _styles2.default.code },
+	      _react2.default.createElement(
+	        'div',
+	        { style: _styles2.default.detects },
+	        testResult('fine', 'detectPointer'),
+	        testResult('coarse', 'detectPointer'),
+	        testResult('none', 'detectPointer'),
+	        testResult('anyFine', 'detectPointer'),
+	        testResult('anyCoarse', 'detectPointer'),
+	        testResult('anyNone', 'detectPointer')
+	      )
 	    ),
 	    _react2.default.createElement(
 	      'h2',
-	      { id: 'detect-touch-events' },
+	      { id: 'detect-touch-events', style: _styles2.default.h2 },
 	      'Detect Touch Events'
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      null,
+	      { style: _styles2.default.repoLink },
 	      _react2.default.createElement(
 	        'a',
 	        { href: 'https://github.com/rafrex/detect-touch-events', target: '_blank' },
@@ -173,31 +190,53 @@
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      null,
-	      testResult('hasApi', 'detectTouchEvents'),
-	      testResult('maxTouchPoints', 'detectTouchEvents')
+	      { style: _styles2.default.code },
+	      _react2.default.createElement(
+	        'div',
+	        { style: _styles2.default.detects },
+	        testResult('hasApi', 'detectTouchEvents'),
+	        testResult('maxTouchPoints', 'detectTouchEvents')
+	      )
 	    ),
 	    _react2.default.createElement(
 	      'h2',
-	      { id: 'detect-pointer-events' },
+	      { id: 'detect-pointer-events', style: _styles2.default.h2 },
 	      'Detect Pointer Events'
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      null,
+	      { style: _styles2.default.repoLink },
 	      _react2.default.createElement(
 	        'a',
-	        { href: 'https://github.com/rafrex/detect-pointer-events', target: '_blank' },
+	        { className: 'test', href: 'https://github.com/rafrex/detect-pointer-events', target: '_blank' },
 	        'https://github.com/rafrex/detect-pointer-events'
 	      )
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      null,
-	      testResult('hasApi', 'detectPointerEvents'),
-	      testResult('requiresPrefix', 'detectPointerEvents'),
-	      testResult('hasTouch', 'detectPointerEvents'),
-	      testResult('maxTouchPoints', 'detectPointerEvents')
+	      { style: _styles2.default.code },
+	      _react2.default.createElement(
+	        'div',
+	        { style: _styles2.default.detects },
+	        testResult('hasApi', 'detectPointerEvents'),
+	        testResult('requiresPrefix', 'detectPointerEvents'),
+	        testResult('hasTouch', 'detectPointerEvents'),
+	        testResult('maxTouchPoints', 'detectPointerEvents')
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { style: _styles2.default.creditLink },
+	      _react2.default.createElement(
+	        'a',
+	        { className: 'extended-link', href: 'http://www.rafaelpedicini.com', target: '_blank' },
+	        'Code and concept by ',
+	        _react2.default.createElement(
+	          'span',
+	          null,
+	          'Rafael Pedicini'
+	        )
+	      )
 	    )
 	  );
 	}
@@ -22127,7 +22166,7 @@
 	  }
 	
 	  function addBlankTouchListenerToBody() {
-	    html.addEventListener('touchstart', function(){}, false);
+	    body.addEventListener('touchstart', function(){}, false);
 	  }
 	
 	
@@ -22158,6 +22197,70 @@
 	
 	}());
 
+
+/***/ },
+/* 178 */
+/*!**************************!*\
+  !*** ./styles/styles.js ***!
+  \**************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  app: {
+	    backgroundColor: '#F0F0F0',
+	    maxWidth: '400px',
+	    padding: '10px 15px 25px',
+	    margin: '0 auto'
+	  },
+	  h1: {
+	    marginBottom: '-1px',
+	    fontSize: '24px'
+	  },
+	  h2: {
+	    margin: '30px 0 -1px',
+	    fontSize: '20px'
+	  },
+	  repoLink: {
+	    marginLeft: '1px',
+	    color: 'rgb(128, 128, 128)',
+	    fontSize: '14px'
+	  },
+	  creditLink: {
+	    margin: '20px 0 0 1px',
+	    fontSize: '14px'
+	  },
+	  code: {
+	    backgroundColor: '#E0E0E0',
+	    fontFamily: 'monospace',
+	    fontSize: '15px',
+	    padding: '1px 5px 1px 5px',
+	    borderRadius: '3px',
+	    margin: '8px 0'
+	  },
+	  detects: {
+	    margin: '8px 11px 10px'
+	  },
+	  testResult: {
+	    margin: '2px 0'
+	  },
+	  testResultColor: function testResultColor(value) {
+	    switch (value) {
+	      case 'true':
+	        return 'rgb(0, 160, 0)';
+	      case 'false':
+	        return 'rgba(216, 0, 0, .75)';
+	      case 'undefined':
+	        return 'rgba(128, 128, 128, .75)';
+	      default:
+	        return 'rgba(0, 0, 208, .75)';
+	    }
+	  }
+	};
 
 /***/ }
 /******/ ]);

@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "current-input": "^0.1.0",
-    "detect-it": "^0.2.0",
+    "detect-it": "^1.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
   },

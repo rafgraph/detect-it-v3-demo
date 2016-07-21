@@ -47,14 +47,40 @@ a {
   touch-action: manipulation;
 }
 
-a:hover, a:active {
+.current-input-mouse a:hover,
+.current-input-mouse a:active {
+  color: black;
   border-bottom: 1px solid rgb(0, 168, 0);
 }
 
-.current-input-touch a:hover {
+.current-input-touch a:active {
+  color: black;
+  border-bottom: 1px dashed rgb(0, 168, 0);
+}
+
+/*extended link*/
+.extended-link {
+  border: none;
+  color: rgb(128,128,128);
+}
+
+.extended-link > span {
   border-bottom: 1px dotted rgb(0, 168, 0);
 }
 
-.current-input-touch a:active {
+.current-input-mouse .extended-link:hover, .current-input-mouse .extended-link:active,
+.current-input-touch .extended-link:active {
+  border: none;
+  color: rgb(128,128,128);
+}
+
+.current-input-mouse .extended-link:hover > span,
+.current-input-mouse .extended-link:active > span {
+  border-bottom: 1px solid rgb(0, 168, 0);
+  color: black;
+}
+
+.current-input-touch .extended-link:active > span {
   border-bottom: 1px dashed rgb(0, 168, 0);
+  color: black;
 }

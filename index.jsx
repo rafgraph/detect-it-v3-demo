@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import detectIt from 'detect-it';
+import 'current-input';
 
 function App() {
   function toString(item) {

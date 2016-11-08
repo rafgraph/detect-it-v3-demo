@@ -22,6 +22,7 @@ function App() {
       <div style={styles.code}>
         <div style={styles.detects}>
           {testResult('deviceType')}
+          {testResult('passiveEvents')}
           {testResult('hasTouchEventsApi')}
           {testResult('hasPointerEventsApi')}
           {testResult('hasTouch')}
@@ -75,6 +76,15 @@ function App() {
           {testResult('maxTouchPoints', 'detectPointerEvents')}
         </div>
       </div>
+
+      <h2 id="detect-passive-events" style={styles.h2}>Detect Passive Events</h2>
+      <div style={styles.repoLink}><a className="test" href="https://github.com/rafrex/detect-passive-events" target="_blank">https://github.com/rafrex/detect-passive-events</a></div>
+      <div style={styles.code}>
+        <div style={styles.detects}>
+          {testResult('hasSupport', 'detectPassiveEvents')}
+        </div>
+      </div>
+
       <div style={styles.creditLink}><a className="extended-link" href="http://www.rafaelpedicini.com" target="_blank">Code and concept by <span>Rafael Pedicini</span></a></div>
     </div>
   );

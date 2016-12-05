@@ -2,7 +2,7 @@
   "name": "detect-it-live",
   "description": "Live detection test site for detect-it",
   "scripts": {
-    "start": "webpack -d --watch & live-server --entry-file=index.html"
+    "start": "webpack-dev-server -d --inline --host 0.0.0.0 --history-api-fallback --progress"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
-    "live-server": "^1.1.0",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   }
 }

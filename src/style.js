@@ -1,9 +1,17 @@
 export default {
-  app: {
+  root: {
     backgroundColor: '#F0F0F0',
     maxWidth: '400px',
     padding: '10px 15px 25px',
     margin: '0 auto',
+    fontFamily: 'helvetica, sans-serif',
+    fontWeight: '300',
+    fontSize: '16px',
+    letterSpacing: '0.015em',
+    WebkitTextSizeAdjust: 'none',
+    MozTextSizeAdjust: 'none',
+    msTextSizeAdjust: 'none',
+    textSizeAdjust: 'none',
   },
   h1: {
     marginBottom: '-1px',
@@ -36,7 +44,7 @@ export default {
   testResult: {
     margin: '2px 0',
   },
-  testResultColor: value => {
+  testResultColor: (value) => {
     switch (value) {
       case 'true':
         return 'rgb(0, 160, 0)';

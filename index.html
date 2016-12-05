@@ -6,7 +6,23 @@
     <title>Detect It</title>
     <meta name="description" content="Detect if a device is mouse only, touch only, or hybrid, and if it supports passive event listeners. Code and concept by Rafael Pedicini.">
 
-    <style>html{background-color: #F0F0F0;}</style>
+    <style>
+      html, body, div, span, a, p, h1, h2, code {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        box-sizing: inherit;
+        font: inherit;
+        text-decoration: inherit;
+        text-align: inherit;
+        color: inherit;
+        background: transparent;
+      }
+      /*set height to 100% to pass down window height (without scroll bars) to react app*/
+      html, body { height: 100%; }
+      html { background-color: rgb(0, 120, 0); }
+      #root { background-color: #F0F0F0; min-height: 100%; }
+    </style>
 
     <!-- start favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="http://favicon.rafrex.com/green-grid-144-168-192/apple-touch-icon-57x57.png">
@@ -31,8 +47,6 @@
     <meta name="msapplication-config" content="http://favicon.rafrex.com/green-grid-144-168-192/browserconfig.xml">
     <meta name="theme-color" content="#000000">
     <!-- end favicon -->
-
-    <link rel="stylesheet" href="/src/styles/app.css">
 
     <!-- start google analytics -->
     <script>

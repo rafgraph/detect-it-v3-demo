@@ -2,24 +2,47 @@ export default {
   root: {
     backgroundColor: '#F0F0F0',
     maxWidth: '400px',
-    padding: '10px 15px 25px',
+    padding: '12px 15px 25px',
     margin: '0 auto',
     fontFamily: 'helvetica, sans-serif',
     fontWeight: '300',
     fontSize: '16px',
-    letterSpacing: '0.015em',
+    letterSpacing: '0.025em',
     WebkitTextSizeAdjust: 'none',
     MozTextSizeAdjust: 'none',
     msTextSizeAdjust: 'none',
     textSizeAdjust: 'none',
   },
+  link: {
+    normal: {
+      borderBottom: '1px dotted rgb(0, 168, 0)',
+      color: 'rgb(128, 128, 128)',
+    },
+    hover: {
+      borderBottom: '1px solid rgb(0, 168, 0)',
+      color: 'black',
+    },
+    active: 'hover',
+    touchActive: {
+      borderBottom: '1px dashed rgb(0, 168, 0)',
+      color: 'black',
+    },
+    focusFromTab: {
+      outline: '2px solid rgb(0, 152, 0)',
+      outlineOffset: '2px',
+    },
+    touchActiveTapOnly: true,
+    target: '_blank',
+    rel: 'noopener noreferrer',
+  },
   h1: {
-    marginBottom: '-1px',
     fontSize: '24px',
+    letterSpacing: '0',
   },
   h2: {
-    margin: '30px 0 -1px',
+    margin: '30px 0 0',
     fontSize: '20px',
+    letterSpacing: '0.0em',
   },
   repoLink: {
     marginLeft: '1px',
@@ -29,6 +52,26 @@ export default {
   creditLink: {
     margin: '20px 0 0 1px',
     fontSize: '14px',
+    color: 'rgb(128, 128, 128)',
+  },
+  creditLinkChildStyle: {
+    onParentNormal: {
+      borderBottom: '1px dotted rgb(0, 168, 0)',
+      color: 'rgb(128, 128, 128)',
+    },
+    onParentHover: {
+      borderBottom: '1px solid rgb(0, 168, 0)',
+      color: 'black',
+    },
+    onParentActive: 'hover',
+    onParentTouchActive: {
+      borderBottom: '1px dashed rgb(0, 168, 0)',
+      color: 'black',
+    },
+    onParentFocusFromTab: {
+      outline: '2px solid rgb(0, 152, 0)',
+      outlineOffset: '2px',
+    },
   },
   code: {
     backgroundColor: '#E0E0E0',

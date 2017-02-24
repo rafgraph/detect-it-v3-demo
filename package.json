@@ -11,7 +11,7 @@
   "author": "Rafael Pedicini <code@rafrex.com>",
   "license": "MIT",
   "dependencies": {
-    "detect-it": "^2.0.0",
+    "detect-it": "^2.1.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-interactive": "^0.4.0"

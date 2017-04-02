@@ -1,20 +1,27 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { render } from 'react-dom';
 import detectIt from 'detect-it';
 import Interactive from 'react-interactive';
 import s from './style';
 
-function App() {
+function TestResult(props) {
   function toString(item) {
     return item === undefined ? 'undefined' : item.toString();
   }
+  const { item, detectModule } = props;
+  const value = toString(detectModule ? detectIt.state[detectModule][item] : detectIt[item]);
+  const color = s.testResultColor(value);
+  return <div style={s.testResult}>{item}: <span style={{ color }}>{value}</span></div>;
+}
+TestResult.defaultProps = {
+  detectModule: null,
+};
+TestResult.propTypes = {
+  item: PropTypes.string.isRequired,
+  detectModule: PropTypes.string,
+};
 
-  function testResult(item, prefix) {
-    const value = toString(prefix ? detectIt.state[prefix][item] : detectIt[item]);
-    const color = s.testResultColor(value);
-    return <div style={s.testResult}>{item}: <span style={{ color }}>{value}</span></div>;
-  }
-
+function App() {
   return (
     <div style={s.root}>
       <h1 id="detect-it" style={s.h1}>Detect It &#8211; Live Detection Test</h1>
@@ -27,13 +34,13 @@ function App() {
       </div>
       <div style={s.code}>
         <div style={s.detects}>
-          {testResult('deviceType')}
-          {testResult('passiveEvents')}
-          {testResult('hasMouse')}
-          {testResult('hasTouch')}
-          {testResult('maxTouchPoints')}
-          {testResult('primaryHover')}
-          {testResult('primaryPointer')}
+          <TestResult item="deviceType" />
+          <TestResult item="passiveEvents" />
+          <TestResult item="hasMouse" />
+          <TestResult item="hasTouch" />
+          <TestResult item="maxTouchPoints" />
+          <TestResult item="primaryHover" />
+          <TestResult item="primaryPointer" />
         </div>
       </div>
 
@@ -48,10 +55,10 @@ function App() {
       </div>
       <div style={s.code}>
         <div style={s.detects}>
-          {testResult('hover', 'detectHover')}
-          {testResult('none', 'detectHover')}
-          {testResult('anyHover', 'detectHover')}
-          {testResult('anyNone', 'detectHover')}
+          <TestResult item="hover" detectModule="detectHover" />
+          <TestResult item="none" detectModule="detectHover" />
+          <TestResult item="anyHover" detectModule="detectHover" />
+          <TestResult item="anyNone" detectModule="detectHover" />
         </div>
       </div>
 
@@ -65,12 +72,12 @@ function App() {
       </div>
       <div style={s.code}>
         <div style={s.detects}>
-          {testResult('fine', 'detectPointer')}
-          {testResult('coarse', 'detectPointer')}
-          {testResult('none', 'detectPointer')}
-          {testResult('anyFine', 'detectPointer')}
-          {testResult('anyCoarse', 'detectPointer')}
-          {testResult('anyNone', 'detectPointer')}
+          <TestResult item="fine" detectModule="detectPointer" />
+          <TestResult item="coarse" detectModule="detectPointer" />
+          <TestResult item="none" detectModule="detectPointer" />
+          <TestResult item="anyFine" detectModule="detectPointer" />
+          <TestResult item="anyCoarse" detectModule="detectPointer" />
+          <TestResult item="anyNone" detectModule="detectPointer" />
         </div>
       </div>
 
@@ -84,8 +91,8 @@ function App() {
       </div>
       <div style={s.code}>
         <div style={s.detects}>
-          {testResult('hasApi', 'detectTouchEvents')}
-          {testResult('maxTouchPoints', 'detectTouchEvents')}
+          <TestResult item="hasApi" detectModule="detectTouchEvents" />
+          <TestResult item="maxTouchPoints" detectModule="detectTouchEvents" />
         </div>
       </div>
 
@@ -99,7 +106,7 @@ function App() {
       </div>
       <div style={s.code}>
         <div style={s.detects}>
-          {testResult('hasSupport', 'detectPassiveEvents')}
+          <TestResult item="hasSupport" detectModule="detectPassiveEvents" />
         </div>
       </div>
 

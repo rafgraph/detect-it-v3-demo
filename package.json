@@ -14,7 +14,7 @@
     "detect-it": "^2.1.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-interactive": "^0.4.1"
+    "react-interactive": "^0.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",

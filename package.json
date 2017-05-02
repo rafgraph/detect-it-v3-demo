@@ -2,7 +2,9 @@
   "name": "detect-it-live",
   "description": "Live detection test site for detect-it",
   "scripts": {
-    "start": "webpack-dev-server --devtool eval-source-map --host 0.0.0.0 --public 10.0.1.4:8080 --history-api-fallback --open"
+    "start-local": "npm link detect-it && npm start",
+    "start": "webpack-dev-server --devtool eval-source-map --host 0.0.0.0 --public 10.0.1.4:8080 --history-api-fallback --open",
+    "build": "npm unlink detect-it && npm install --save detect-it && webpack -p"
   },
   "repository": {
     "type": "git",

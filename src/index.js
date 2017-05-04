@@ -39,8 +39,7 @@ function App() {
           <TestResult item="passiveEvents" />
           <TestResult item="hasMouse" />
           <TestResult item="hasTouch" />
-          <TestResult item="primaryHover" />
-          <TestResult item="primaryPointer" />
+          <TestResult item="primaryInput" />
         </div>
       </div>
 

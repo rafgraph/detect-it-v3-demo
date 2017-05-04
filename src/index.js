@@ -39,9 +39,7 @@ function App() {
           <TestResult item="passiveEvents" />
           <TestResult item="hasMouse" />
           <TestResult item="hasTouch" />
-          <TestResult item="maxTouchPoints" />
-          <TestResult item="primaryHover" />
-          <TestResult item="primaryPointer" />
+          <TestResult item="primaryInput" />
         </div>
       </div>
 
@@ -92,8 +90,8 @@ function App() {
       </div>
       <div style={s.code}>
         <div style={s.detects}>
-          <TestResult item="hasApi" detectModule="detectTouchEvents" />
-          <TestResult item="maxTouchPoints" detectModule="detectTouchEvents" />
+          <TestResult item="hasSupport" detectModule="detectTouchEvents" />
+          <TestResult item="browserSupportsApi" detectModule="detectTouchEvents" />
         </div>
       </div>
 

@@ -1410,15 +1410,6 @@ detect-indent@^4.0.0:
   dependencies:
     repeating "^2.0.0"
 
-detect-it@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/detect-it/-/detect-it-3.0.0.tgz#871e4295d98820c75c11d716181bb47a0dc1f242"
-  dependencies:
-    detect-hover "^1.0.1"
-    detect-passive-events "^1.0.2"
-    detect-pointer "^1.0.1"
-    detect-touch-events "^2.0.0"
-
 detect-it@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/detect-it/-/detect-it-3.0.1.tgz#8c745eba45c73a8e1748163154da5bbf856f5a1b"
@@ -3307,11 +3298,11 @@ react-dom@^15.5.4:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-react-interactive@^0.6.5:
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/react-interactive/-/react-interactive-0.6.6.tgz#20f8b656b0a0ea6db4648f9903c876940b717b34"
+react-interactive@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/react-interactive/-/react-interactive-0.8.0.tgz#1f488043f50108e14830df17553d896aa095805a"
   dependencies:
-    detect-it "^3.0.0"
+    detect-it "^3.0.1"
     object-assign "^4.1.1"
     prop-types "^15.5.8"
 

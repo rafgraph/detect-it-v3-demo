@@ -1477,6 +1477,10 @@ detect-hover@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/detect-hover/-/detect-hover-1.0.1.tgz#cf8293b91bdc16b35a8dbbe52be06553ad23d3fc"
 
+detect-hover@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/detect-hover/-/detect-hover-1.0.2.tgz#589fb0b469220897a9eee3fa36a917e1eda37a21"
+
 detect-indent@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-4.0.0.tgz#f76d064352cdf43a1cb6ce619c4ee3a9475de208"
@@ -1492,6 +1496,15 @@ detect-it@^3.0.1:
     detect-pointer "^1.0.1"
     detect-touch-events "^2.0.0"
 
+detect-it@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/detect-it/-/detect-it-3.0.2.tgz#091b489df45ce8eafb3bc76a291ea9ea1687fcb3"
+  dependencies:
+    detect-hover "^1.0.2"
+    detect-passive-events "^1.0.3"
+    detect-pointer "^1.0.2"
+    detect-touch-events "^2.0.1"
+
 detect-node@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.3.tgz#a2033c09cc8e158d37748fbde7507832bd6ce127"
@@ -1500,13 +1513,25 @@ detect-passive-events@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/detect-passive-events/-/detect-passive-events-1.0.2.tgz#0e39d7b675907eff55b8965f5be3fc0b0f4178b9"
 
+detect-passive-events@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/detect-passive-events/-/detect-passive-events-1.0.3.tgz#8a05fd0583050bbd8622b769fa54f655761fea7e"
+
 detect-pointer@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/detect-pointer/-/detect-pointer-1.0.1.tgz#cc9aa88b2b0f780250e50a81cfefa9393b14369f"
 
+detect-pointer@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/detect-pointer/-/detect-pointer-1.0.2.tgz#1e0e4e261dab45055c50c74fb5a4ff09ceb18fbd"
+
 detect-touch-events@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/detect-touch-events/-/detect-touch-events-2.0.0.tgz#d3d09e0b6e9ff00270c044c577087be83617e793"
+
+detect-touch-events@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/detect-touch-events/-/detect-touch-events-2.0.1.tgz#365833cf0c5c40c4090a08096b8a688db00fa337"
 
 diffie-hellman@^5.0.0:
   version "5.0.2"

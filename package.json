@@ -14,9 +14,9 @@
   "license": "MIT",
   "dependencies": {
     "detect-it": "^3.0.3",
-    "prop-types": "^15.5.8",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-interactive": "^0.8.0"
   },
   "devDependencies": {

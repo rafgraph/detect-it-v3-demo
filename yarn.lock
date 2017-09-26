@@ -1496,12 +1496,12 @@ detect-it@^3.0.1:
     detect-pointer "^1.0.1"
     detect-touch-events "^2.0.0"
 
-detect-it@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/detect-it/-/detect-it-3.0.2.tgz#091b489df45ce8eafb3bc76a291ea9ea1687fcb3"
+detect-it@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/detect-it/-/detect-it-3.0.3.tgz#8e13daa0b62126150cbf76d083a1d34d1b07d071"
   dependencies:
     detect-hover "^1.0.2"
-    detect-passive-events "^1.0.3"
+    detect-passive-events "^1.0.4"
     detect-pointer "^1.0.2"
     detect-touch-events "^2.0.1"
 
@@ -1513,9 +1513,9 @@ detect-passive-events@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/detect-passive-events/-/detect-passive-events-1.0.2.tgz#0e39d7b675907eff55b8965f5be3fc0b0f4178b9"
 
-detect-passive-events@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/detect-passive-events/-/detect-passive-events-1.0.3.tgz#8a05fd0583050bbd8622b769fa54f655761fea7e"
+detect-passive-events@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/detect-passive-events/-/detect-passive-events-1.0.4.tgz#6ed477e6e5bceb79079735dcd357789d37f9a91a"
 
 detect-pointer@^1.0.1:
   version "1.0.1"

@@ -1477,9 +1477,9 @@ detect-it@^3.0.3:
     detect-pointer "^1.0.2"
     detect-touch-events "^2.0.1"
 
-detect-it@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/detect-it/-/detect-it-3.0.4.tgz#79df04f25cc5b2529ebfa37c0fa1baa0e1d41862"
+detect-it@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/detect-it/-/detect-it-3.0.5.tgz#816396c0fe12b11af08299a7c2b8381e58d15175"
   dependencies:
     detect-hover "^1.0.2"
     detect-passive-events "^1.0.4"

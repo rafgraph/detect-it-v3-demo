@@ -3,7 +3,7 @@
   "description": "Live detection test site for detect-it",
   "scripts": {
     "start-local": "yarn link detect-it && yarn start",
-    "start": "webpack-dev-server --devtool eval-source-map --host 0.0.0.0 --public 10.0.1.4:8080 --history-api-fallback --open",
+    "start": "webpack-dev-server --devtool eval-source-map --host 0.0.0.0 --public 10.0.1.6:8080 --history-api-fallback --open",
     "build": "rm -rf node_modules && yarn install && webpack -p"
   },
   "repository": {
@@ -13,7 +13,7 @@
   "author": "Rafael Pedicini <code@rafrex.com>",
   "license": "MIT",
   "dependencies": {
-    "detect-it": "^3.0.4",
+    "detect-it": "^3.0.5",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

@@ -49,30 +49,6 @@ export default {
     color: 'rgb(128, 128, 128)',
     fontSize: '14px',
   },
-  creditLink: {
-    margin: '20px 0 0 1px',
-    fontSize: '14px',
-    color: 'rgb(128, 128, 128)',
-  },
-  creditLinkChildStyle: {
-    onParentNormal: {
-      borderBottom: '1px dotted rgb(0, 168, 0)',
-      color: 'rgb(128, 128, 128)',
-    },
-    onParentHover: {
-      borderBottom: '1px solid rgb(0, 168, 0)',
-      color: 'black',
-    },
-    onParentActive: 'hover',
-    onParentTouchActive: {
-      borderBottom: '1px dashed rgb(0, 168, 0)',
-      color: 'black',
-    },
-    onParentFocusFromTab: {
-      outline: '2px solid rgb(0, 152, 0)',
-      outlineOffset: '2px',
-    },
-  },
   code: {
     backgroundColor: '#E0E0E0',
     fontFamily: 'monospace',

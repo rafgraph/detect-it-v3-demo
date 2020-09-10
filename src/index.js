@@ -29,9 +29,9 @@ function App() {
       <div style={s.repoLink}>
         <Interactive
           as="a"
-          href="https://github.com/rafrex/detect-it"
+          href="https://github.com/rafgraph/detect-it"
           {...s.link}
-        >https://github.com/rafrex/detect-it</Interactive>
+        >https://github.com/rafgraph/detect-it</Interactive>
       </div>
       <div style={s.code}>
         <div style={s.detects}>
@@ -48,9 +48,9 @@ function App() {
       <div style={s.repoLink}>
         <Interactive
           as="a"
-          href="https://github.com/rafrex/detect-hover"
+          href="https://github.com/rafgraph/detect-hover"
           {...s.link}
-        >https://github.com/rafrex/detect-hover</Interactive>
+        >https://github.com/rafgraph/detect-hover</Interactive>
       </div>
       <div style={s.code}>
         <div style={s.detects}>
@@ -65,9 +65,9 @@ function App() {
       <div style={s.repoLink}>
         <Interactive
           as="a"
-          href="https://github.com/rafrex/detect-pointer"
+          href="https://github.com/rafgraph/detect-pointer"
           {...s.link}
-        >https://github.com/rafrex/detect-pointer</Interactive>
+        >https://github.com/rafgraph/detect-pointer</Interactive>
       </div>
       <div style={s.code}>
         <div style={s.detects}>
@@ -84,9 +84,9 @@ function App() {
       <div style={s.repoLink}>
         <Interactive
           as="a"
-          href="https://github.com/rafrex/detect-touch-events"
+          href="https://github.com/rafgraph/detect-touch-events"
           {...s.link}
-        >https://github.com/rafrex/detect-touch-events</Interactive>
+        >https://github.com/rafgraph/detect-touch-events</Interactive>
       </div>
       <div style={s.code}>
         <div style={s.detects}>
@@ -99,9 +99,9 @@ function App() {
       <div style={s.repoLink}>
         <Interactive
           as="a"
-          href="https://github.com/rafrex/detect-passive-events"
+          href="https://github.com/rafgraph/detect-passive-events"
           {...s.link}
-        >https://github.com/rafrex/detect-passive-events</Interactive>
+        >https://github.com/rafgraph/detect-passive-events</Interactive>
       </div>
       <div style={s.code}>
         <div style={s.detects}>
@@ -109,18 +109,6 @@ function App() {
         </div>
       </div>
 
-      <div style={s.creditLink}>
-        <Interactive
-          as="a"
-          href="http://www.rafaelpedicini.com"
-          focusFromTab={{}}
-          touchActive={{}}
-          touchActiveTapOnly
-          interactiveChild
-          target="_blank"
-          rel="noopener noreferrer"
-        >Code and concept by <span {...s.creditLinkChildStyle}>Rafael Pedicini</span></Interactive>
-      </div>
     </div>
   );
 }

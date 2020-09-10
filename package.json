@@ -3,17 +3,17 @@
   "description": "Live detection test site for detect-it",
   "scripts": {
     "start-local": "yarn link detect-it && yarn start",
-    "start": "webpack-dev-server --devtool eval-source-map --host 0.0.0.0 --public 10.0.1.6:8080 --history-api-fallback --open",
+    "start": "webpack-dev-server --devtool eval-source-map --host 0.0.0.0 --disable-host-check --history-api-fallback --open",
     "build": "rm -rf node_modules && yarn install && webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafrex/detect-it.git"
+    "url": "git+https://github.com/rafgraph/detect-it.git"
   },
-  "author": "Rafael Pedicini <code@rafrex.com>",
+  "author": "Rafael Pedicini <rafael@rafgraph.dev>",
   "license": "MIT",
   "dependencies": {
-    "detect-it": "^3.0.5",
+    "detect-it": "^3.0.6",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -32,6 +32,6 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2"
+    "webpack-dev-server": "^2.11.5"
   }
 }

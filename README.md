@@ -1,3 +1,3 @@
 # Detect It Live
 
-[Live detection test site for `detect-it`](http://detect-it.rafrex.com)
+[Live detection test site for `detect-it`](https://detect-it.rafgraph.dev)

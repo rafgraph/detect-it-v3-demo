@@ -25,13 +25,30 @@ TestResult.propTypes = {
 function App() {
   return (
     <div style={s.root}>
-      <h1 id="detect-it" style={s.h1}>Detect It &#8211; Live Detection Test</h1>
-      <div style={s.repoLink}>
+      <div style={s.versionNote}>
+        Note: this is the live test for{' '}
+        <Interactive
+          as="a"
+          href="https://github.com/rafgraph/detect-it/tree/v3.0.7"
+          {...s.link}
+          normal={{ borderBottom: '1px dotted rgb(0, 168, 0)', color: 'black',}}
+        >Detect It v3</Interactive>
+        , the{' '}
         <Interactive
           as="a"
           href="https://github.com/rafgraph/detect-it"
           {...s.link}
-        >https://github.com/rafgraph/detect-it</Interactive>
+          normal={{ borderBottom: '1px dotted rgb(0, 168, 0)', color: 'black',}}
+        >most recent version of Detect It is available here.</Interactive>
+      </div>
+
+      <h1 id="detect-it" style={s.h1}>Detect It v3 &#8211; Live Detection Test</h1>
+      <div style={s.repoLink}>
+        <Interactive
+          as="a"
+          href="https://github.com/rafgraph/detect-it/tree/v3.0.7"
+          {...s.link}
+        >https://github.com/rafgraph/detect-it/tree/v3.0.7</Interactive>
       </div>
       <div style={s.code}>
         <div style={s.detects}>

@@ -35,6 +35,9 @@ export default {
     target: '_blank',
     rel: 'noopener noreferrer',
   },
+  versionNote: {
+    marginBottom: '10px',
+  },
   h1: {
     fontSize: '24px',
     letterSpacing: '0',
